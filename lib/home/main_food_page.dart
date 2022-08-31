@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:freedom/utils/color.dart';
+import 'package:freedom/widgets/big_text.dart';
 
 class MainFoodPage extends StatefulWidget {
   const MainFoodPage({Key? key}) : super(key: key);
@@ -22,7 +24,18 @@ class _MainFoodPageState extends State<MainFoodPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Column(children: [Text("Nigeria"), Text("Osun")]),
+                  Column(children: [
+                    BigText(text: "Nigeria", color: AppColors.mainColor),
+                    Row(
+                      children: [
+                        BigText(
+                          text: "Osun",
+                          color: Colors.black54,
+                        ),
+                        Icon(Icons.arrow_drop_down_rounded)
+                      ],
+                    )
+                  ]),
                   Center(
                     child: Container(
                       width: 45,
@@ -33,7 +46,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                       ),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
-                        color: Colors.blue,
+                        color: AppColors.mainColor,
                       ),
                     ),
                   )
