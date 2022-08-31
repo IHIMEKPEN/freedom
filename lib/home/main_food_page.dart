@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:freedom/home/food_page_body.dart';
 import 'package:freedom/utils/color.dart';
 import 'package:freedom/widgets/big_text.dart';
 
@@ -53,7 +54,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                 ],
               )),
         ),
-      ],
+      FoodPageBody() ],
     ));
   }
 }
