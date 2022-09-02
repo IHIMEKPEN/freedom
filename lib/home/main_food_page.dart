@@ -29,9 +29,13 @@ class _MainFoodPageState extends State<MainFoodPage> {
                     BigText(text: "Nigeria", color: AppColors.mainColor),
                     Row(
                       children: [
+                         SizedBox(
+                        width: 10,
+                      ),
                         BigText(
                           text: "Osun",
                           color: Colors.black54,
+                        
                         ),
                         Icon(Icons.arrow_drop_down_rounded)
                       ],
