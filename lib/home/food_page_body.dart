@@ -3,6 +3,7 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:freedom/utils/color.dart';
 import 'package:freedom/widgets/big_text.dart';
+import 'package:freedom/widgets/icon_and_text.dart';
 import 'package:freedom/widgets/small_text.dart';
 
 class FoodPageBody extends StatefulWidget {
@@ -33,7 +34,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
       children: [
         Container(
             height: 220,
-            margin: EdgeInsets.only(left: 5, right: 5),
+            margin: EdgeInsets.only(left: 10, right: 10),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(30),
               color: index.isEven ? Color(0XFF69c5df) : Color(0XFF9294cc),
@@ -46,7 +47,7 @@ class _FoodPageBodyState extends State<FoodPageBody> {
           alignment: Alignment.bottomCenter,
           child: Container(
             height: 120,
-            margin: EdgeInsets.only(left: 30, right: 30, bottom: 15),
+            margin: EdgeInsets.only(left: 30, right: 30, bottom: 30),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(30),
               color: Colors.white,
@@ -96,6 +97,38 @@ class _FoodPageBodyState extends State<FoodPageBody> {
                       ),
                     ],
                   ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      IconAndText(
+                          icon: Icons.circle_sharp,
+                          text: "Normal",
+                          // color: color,
+                          iconColor: AppColors.tagColor
+                          ),
+                            SizedBox(
+                    width: 10,
+                  ),
+                      IconAndText(
+                          icon: Icons.location_on,
+                          text: '1.7km',
+                          // color: color,
+                          iconColor: AppColors.mainColor
+                          ),
+                                    SizedBox(
+                    width: 10,
+                  ),
+                      IconAndText(
+                          icon: Icons.access_time_rounded ,
+                          text: "Normal",
+                          // color: color,
+                          iconColor: AppColors.clockColor
+                          ),
+                    ],
+                  )
                 ],
               ),
             ),

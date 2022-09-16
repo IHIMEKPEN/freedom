@@ -18,6 +18,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
     return Scaffold(
         body: Column(
       children: [
+        //container for navbar
         Container(
           child: Container(
               margin: EdgeInsets.only(top: 45, bottom: 15),
